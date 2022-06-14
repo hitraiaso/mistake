@@ -32,3 +32,10 @@ int multiply(int a, int b)
 ###### **Languages**
 * **English** : C1
 * **Russian** : Native
+/*** <section class="section section-profile" id="profile">
+        <img src="assets/img/avatar.jfif" alt="profile picture" style="height: 100px; ;">
+<div class="section-profile-title">
+    <h1 class="section-title main">Sofya Bass</h1>
+    <h3 class="section-subtitle">Junior Frontend developer</h3>
+</div>
+    </section>***/
