@@ -1,1 +1,200 @@
 
+* {
+  margin: 0 auto;
+  padding: 0;  
+  scroll-behavior: smooth; 
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+/***Body***/
+body {
+  background-color: rgba(216, 191, 216, 0.592);
+  max-width: 1110px;
+  min-width: 600px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2rem;
+}
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: rgba(181, 171, 181, 0.574);
+}
+/***Header***/
+header {
+min-height: 10%;
+height: 80px;
+background-color: darkgrey;
+position: relative;
+left: 150px;
+top: 10px;
+display: flex;
+justify-content: space-between;
+margin-block-end: auto;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 50px;
+  position: relative;
+  left: 10%;
+}
+
+  .section {
+    width: 50%;
+    display: block;
+  }
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+  section {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+.main-menu {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 20px;
+    right: 20px;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px;
+    list-style: none; 
+    
+}
+.main-menu li {
+  position: relative;
+  float: right;
+  padding: 0 12px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  
+}
+/***profile pic***/
+.profile-pic {
+  position: static;
+  margin: 0;
+}
+img {
+  width: 20%;
+  border-radius: 120px;
+}
+/***profile title***/
+.profile-title {
+  background-color: rgba(253, 245, 230, 0.85);
+  position: relative;
+  right: 10%;
+}
+.subtitle{
+  position: relative;
+  left: 20%;
+}
+
+/*** about me***/
+.about-me {
+  position: relative;
+  right: 70px;
+  padding: 1rem;
+  width: 40%;
+  background-color: rgb(59, 50, 72);
+  color: lavender;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  float: left;
+  height: 600px
+
+}
+.contacts{
+  background-color: rgba(143, 188, 143, 0.039);
+  margin-bottom: 30px;
+}
+
+.section-list {
+ position: relative;
+ text-align: left;
+ margin: 0 auto;
+ list-style: none;
+}
+
+.map {
+    padding-left: 30px;
+    background-image: url("assets/ico/marker-free-icon-font.ico");
+    background-position-x: left center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+.e-mail {
+    padding-left: 30px;
+    background-image: url("assets/ico/envelope-free-icon-font.ico");
+    background-position-x: left center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+.Telegram {
+  padding-left: 30px;
+  background-image: url("assets/ico/telegram-free-icon-font.ico");
+  background-position-x: left center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+.discord {
+  padding-left: 30px;
+  background-image: url("assets/ico/discord-free-icon-font.ico");
+  background-position-x: left center;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+.skills {
+ position: relative;
+  margin-top: 50px;
+  right: 10%;
+}
+.section-skills {
+  position:relative;
+}
+/***main content***/
+.main-content {
+  display: block;
+  padding: 1rem;
+  width: 69%;
+  background-color: darkseagreen;
+  color: cornsilk;
+  height: 800px;
+  text-align: center;
+  float: right;
+}
+/***footer***/
+.rs-logo {
+position: relative;
+float: right;
+}
+.github {
+  position: relative;
+  float: right;
+}
+.year {
+  position: relative;
+  
+}
+footer {
+  background-color: mediumslateblue;
+  display: inline-block;
+  max-width: 1200px ;
+  margin: 0%;
+}
+hr {
+  padding-bottom: 1px;
+  background-color: #9b9b9b;
+  border-bottom:1px solid #F4F4F4;
+  }
