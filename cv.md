@@ -1,0 +1,41 @@
+###### **Sofya Bass**
+***
+ **Contacts**
+* **Phone** : +79216399389
+* **E-mail**: hitraiaso@gmail.com
+* **Telegram**: @goneplayon
+* **[Github](https://github.com/hitraiaso)**
+* **Discord**: @hitraia_so
+* ***
+###### ** About me**
+I am an energetic, ambitious person who has developed a responsible approach to any task that I undertake. I am highly motivated and eager to learn new technologies.
+###### **Skills**
+* Teamwork
+* Analytical thinking
+* Javascript (in progress)
+* CRM
+* C (in progress)
+* Excellent interpersonal skills
+* ****
+###### **Courses**
+* RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+****
+###### **Code example**
+```
+int multiply(int a, int b)
+{
+
+   return a * b;
+}
+```
+***
+###### **Languages**
+* **English** : C1
+* **Russian** : Native
+/*** <section class="section section-profile" id="profile">
+        <img src="assets/img/avatar.jfif" alt="profile picture" style="height: 100px; ;">
+<div class="section-profile-title">
+    <h1 class="section-title main">Sofya Bass</h1>
+    <h3 class="section-subtitle">Junior Frontend developer</h3>
+</div>
+    </section>***/
