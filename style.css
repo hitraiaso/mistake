@@ -5,6 +5,7 @@
   scroll-behavior: smooth; 
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  border-radius: 30px;
 
 }
 /***Body***/
@@ -15,95 +16,182 @@ body {
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
   padding: 2rem;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .wrapper {
   position: relative;
+  right: 8%;
   display: flex;
   flex-direction: column;
-  width: 1100px;
+  width: 1200px;
   min-height: 100vh;
   margin: auto;
   background-color: rgba(181, 171, 181, 0.574);
 }
-/***Header***/
+.wrapper::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: rgba(171, 169, 178, 0.446);
+  width: 250px;
+  height: 250px;
+  bottom: 15%;
+  left: 3%;
+  border-radius: 50%;
+  z-index: 1;
+}
+.wrapper::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: rgba(240, 230, 140, 0.731);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  bottom: 25%;
+  left:17%;
+}
+.contacts{
+  background-color: rgba(236, 229, 208, 0.526);
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  font-weight: 500;
+  font-size: larger;
+}
+                         /***Header***/
 header {
 min-height: 10%;
 height: 80px;
-background-color: darkgrey;
+background-color: rgba(143, 188, 143, 0.592);
 position: relative;
-left: 150px;
-top: 10px;
+top: 40px;
 display: flex;
-justify-content: space-between;
-margin-block-end: auto;
+justify-content: flex-start;
 }
 .container {
   max-width: 1440px;
-  margin: 0 auto;
   min-height: 50px;
   position: relative;
   left: 10%;
+  margin: 0 auto;
 }
-
-  .section {
-    width: 50%;
-    display: block;
+.header-container {
+  margin-left: 2%;
+  justify-content: space-between;
+}
+ section {
+  margin: 40px;
+  justify-content: center;
+  padding-left: 10%; 
   }
+
   @media (max-width: 768px) {
     .section {
       width: 100%;
     }
   }
-  section {
-    margin-top: 40px;
-    text-align: center;
-  }
-  
 .main-menu {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: 20px;
-    right: 20px;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 1440px;
-    list-style: none; 
+   display: flex;
+   position: relative;
+   top: 20px;
+   right: 140px;
+   margin: 0 auto;
+   padding: 0;
+   max-width: 1440px;
+   list-style: none; 
     
 }
 .main-menu li {
   position: relative;
   float: right;
-  padding: 0 12px;
+  text-align: center;
+  padding: 0 20px;
   text-decoration: none;
   font-size: 20px;
-  font-weight: 300;
-  
+  font-weight: 300; 
 }
+.nav-link {
+  padding: 0 20px;
+  line-height: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+
+}
+a {
+  color: darkslategray;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+a:hover {
+  color: beige;
+}
+
+
 /***profile pic***/
 .profile-pic {
-  position: static;
-  margin: 0;
+  margin: 0 auto;
+  position: relative;
+  right: 7%;
+  top: 100px;
+  }
+.profile-pic::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: rgba(137, 43, 226, 0.436);
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    left: 70px;
+    bottom: 10px;
+    z-index: 0;
 }
-img {
-  width: 20%;
-  border-radius: 120px;
+.profile-pic::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: rgba(122, 226, 43, 0.446);
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  left: 870px;
+  bottom: 130px;
+  z-index: 1;
 }
-/***profile title***/
+.profile-img {
+  width: 23%;
+  border-radius:50%;
+  position: relative;
+  z-index: 5;
+}
+                   /***profile title***/
 .profile-title {
   background-color: rgba(253, 245, 230, 0.85);
   position: relative;
-  right: 10%;
+  width: 80%;
+  bottom: 100px;
+  left: 10px;
+  justify-content: flex-end;
+  width: 60%;
+  margin-bottom: 4%;
+  z-index: 3;
 }
 .subtitle{
   position: relative;
   left: 20%;
 }
 
-/*** about me***/
+                        /*** about me***/
 .about-me {
   position: relative;
   right: 70px;
+  top: 30px;
   padding: 1rem;
   width: 40%;
   background-color: rgb(59, 50, 72);
@@ -115,17 +203,21 @@ img {
   height: 600px
 
 }
-.contacts{
-  background-color: rgba(143, 188, 143, 0.039);
-  margin-bottom: 30px;
+
+.skills {
+  width: 80%;
+ text-align: left;
+ margin-left: 20%;
 }
 
+
 .section-list {
- position: relative;
- text-align: left;
+ justify-content: center;
+ align-items: center;
  margin: 0 auto;
  list-style: none;
 }
+
 
 .map {
     padding-left: 30px;
@@ -133,6 +225,7 @@ img {
     background-position-x: left center;
     background-size: 20px 20px;
     background-repeat: no-repeat;
+    border-radius: 0%;
 }
 .e-mail {
     padding-left: 30px;
@@ -140,6 +233,7 @@ img {
     background-position-x: left center;
     background-size: 20px 20px;
     background-repeat: no-repeat;
+    border-radius: 0%;
 }
 .Telegram {
   padding-left: 30px;
@@ -147,6 +241,7 @@ img {
   background-position-x: left center;
   background-size: 20px 20px;
   background-repeat: no-repeat;
+  border-radius: 0%;
 }
 .discord {
   padding-left: 30px;
@@ -154,47 +249,53 @@ img {
   background-position-x: left center;
   background-size: 20px 20px;
   background-repeat: no-repeat;
+  border-radius: 0%;
 }
-.skills {
- position: relative;
-  margin-top: 50px;
-  right: 10%;
-}
-.section-skills {
-  position:relative;
-}
-/***main content***/
+
+
+                     /***main content***/
 .main-content {
   display: block;
-  padding: 1rem;
-  width: 69%;
+  padding: 2rem;
+  width: 60%;
   background-color: darkseagreen;
   color: cornsilk;
-  height: 800px;
+  height:100%;
   text-align: center;
-  float: right;
 }
-/***footer***/
+
+.education {
+  text-align: left;
+  margin-left: 30%;
+}
+                         /***footer***/
+footer {
+  background-color: mediumslateblue;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10%;
+}
 .rs-logo {
-position: relative;
-float: right;
+  width: 20%;
+  position: relative;
+  top:10px;
+  left:30%;
 }
 .github {
   position: relative;
-  float: right;
+  left:20%;
 }
-.year {
-  position: relative;
-  
-}
-footer {
-  background-color: mediumslateblue;
-  display: inline-block;
-  max-width: 1200px ;
-  margin: 0%;
-}
+
 hr {
-  padding-bottom: 1px;
+  padding-bottom: 3px;
   background-color: #9b9b9b;
   border-bottom:1px solid #F4F4F4;
+  }
+  .section-title {
+    font-size: 21px;
+    font-weight: 600;
+    margin-left: 10%;
   }
