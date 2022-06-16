@@ -25,7 +25,7 @@ body {
 }
 .wrapper {
   position: relative;
-  right: 8%;
+  right: 5%;
   display: flex;
   flex-direction: column;
   width: 1200px;
@@ -40,7 +40,7 @@ body {
   background-color: rgba(171, 169, 178, 0.446);
   width: 250px;
   height: 250px;
-  bottom: 15%;
+  bottom: 20%;
   left: 3%;
   border-radius: 50%;
   z-index: 1;
@@ -53,7 +53,7 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  bottom: 25%;
+  bottom: 30%;
   left:17%;
 }
 .contacts{
@@ -190,7 +190,7 @@ a:hover {
                         /*** about me***/
 .about-me {
   position: relative;
-  right: 70px;
+  left: 5%;
   top: 30px;
   padding: 1rem;
   width: 40%;
@@ -222,7 +222,7 @@ a:hover {
 .map {
     padding-left: 30px;
     background-image: url("assets/ico/marker-free-icon-font.ico");
-    background-position-x: left center;
+    background-position-x:left;
     background-size: 20px 20px;
     background-repeat: no-repeat;
     border-radius: 0%;
@@ -257,6 +257,7 @@ a:hover {
 .main-content {
   display: block;
   padding: 2rem;
+  margin-right: 4%;
   width: 60%;
   background-color: darkseagreen;
   color: cornsilk;
@@ -286,7 +287,7 @@ footer {
 }
 .github {
   position: relative;
-  left:20%;
+  left: 10%;
 }
 
 hr {
